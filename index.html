@@ -21,6 +21,7 @@
         rel="stylesheet">
 
     <title>SwiftCart</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
 
     <style>
         * {
@@ -49,7 +50,7 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <a class="text-2xl text-primary font-bold">SwiftCart</a>
+                <a class="text-2xl text-primary font-bold cursor-pointer">SwiftCart</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -65,13 +66,19 @@
         </div>
 
         <!-- Hero section -->
-        <!-- <div class="bg-[url('./assets/banner-image.png')] bg-cover bg-center h-[80vh] w-full flex justify-left items-center">
-            <div class="pl-5 md:pl-48 space-y-4">
-                <h1 class="text-white font-bold text-2xl md:text-6xl">Best Collection For You</h1>
-                <p class="text-white">Discover the latest trends in fashion, electronics, and more. Shop with confidence and style at SwiftCart.</p>
-                <button class="btn btn-primary">Shop Now</button>
+        <div
+            class="relative bg-[url('./assets/banner-image.png')] bg-cover bg-center h-[40vh] md:h-[80vh] w-full flex justify-left items-center">
+
+            <div class="absolute inset-0 bg-black/40"></div>
+
+            <div class="relative pl-5 md:pl-22 space-y-2 md:space-y-4 max-w-2xl">
+                <h1 class="text-white font-bold text-2xl md:text-3xl lg:text-5xl">Best Collection For You</h1>
+                <p class="text-gray-200 text-xs md:text-base">
+                    Discover the latest trends in fashion, electronics, and more.
+                </p>
+                <button class="btn btn-sm md:btn btn-primary text-white">Shop Now</button>
             </div>
-        </div> -->
+        </div>
     </header>
 
     <section class="w-full md:w-8/12 mx-auto px-5 md:px-0 my-10">
@@ -136,9 +143,10 @@
     </section>
 
     <footer class="bg-gray-900">
-        <div class="w-full md:w-8/12 mx-auto px-5 md:px-0 mt-10 py-10 text-gray-100 grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 gap-5">
+        <div
+            class="w-full md:w-8/12 mx-auto px-5 md:px-0 mt-10 py-10 text-gray-100 grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 gap-5">
             <div>
-                <a class="text-2xl text-primary font-bold">SwiftCart</a>
+                <a class="text-2xl text-primary font-bold cursor-pointer">SwiftCart</a>
                 <p class="mt-2 text-sm text-gray-400">Your one-stop shop for all your fashion and lifestyle needs.
                     Quality products, fast delivery, and
                     excellent support.</p>
