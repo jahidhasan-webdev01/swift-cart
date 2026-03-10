@@ -21,6 +21,12 @@
         rel="stylesheet">
 
     <title>SwiftCart</title>
+
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
 </head>
 
 <body class="bg-gray-50">
@@ -74,7 +80,7 @@
             <p class="text-gray-600 text-sm">We provide the best shopping experience with top-notch services.</p>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-5 mt-15 md:mt-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-5 mt-15 md:mt-20">
             <div class="bg-white p-5 rounded-2xl border border-gray-200 relative group shadow">
                 <div
                     class="bg-blue-50 group-hover:bg-blue-100 text-primary p-4 border-3 border-white  rounded-xl shadow-xl absolute -top-7">
@@ -124,31 +130,54 @@
     </section>
 
     <section class="w-full md:w-8/12 mx-auto px-5 md:px-0 my-10 mt-20">
-        <h1 class="text-2xl font-bold">Trending Now</h1>
-        <div id="tredning-container" class="grid grid-cols-4 gap-5">
-            <div class="border-2 rounded-xl">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div class="space-y-3 p-2">
-                    <div class="flex justify-between">
-                        <p class="bg-primary text-white px-3 py-1 text-xs rounded-4xl">Mens clothing</p>
-                        <p>3.8 (120)</p>
-                    </div>
+        <h1 class="text-2xl font-bold text-center">Trending Now</h1>
+        <div id="tredning-product-container" class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
+        </div>
+    </section>
 
-                    <div class="space-y-1">
-                        <h1 class="font-bold">Mens casual premium</h1>
-                        <p class="font-bold text-sm">$109.99</p>
-                    </div>
+    <footer class="bg-gray-900">
+        <div class="w-full md:w-8/12 mx-auto px-5 md:px-0 mt-10 py-10 text-gray-100 grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 gap-5">
+            <div>
+                <a class="text-2xl text-primary font-bold">SwiftCart</a>
+                <p class="mt-2 text-sm text-gray-400">Your one-stop shop for all your fashion and lifestyle needs.
+                    Quality products, fast delivery, and
+                    excellent support.</p>
+            </div>
 
-                    <div class="flex justify-between gap-5">
-                        <button class="btn btn-soft"><i class="fa-regular fa-eye"></i> Details</button>
-                        <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+            <div>
+                <h3 class="font-bold uppercase">Quick Links</h3>
+                <ul class="mt-2 text-sm text-gray-400 space-y-1">
+                    <li class="cursor-pointer">Home</li>
+                    <li class="cursor-pointer">Products</li>
+                    <li class="cursor-pointer">About</li>
+                    <li class="cursor-pointer">Contact</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold uppercase">support</h3>
+                <ul class="mt-2 text-sm text-gray-400 space-y-1">
+                    <li class="cursor-pointer">FAQ</li>
+                    <li class="cursor-pointer">Shipping</li>
+                    <li class="cursor-pointer">Returns</li>
+                    <li class="cursor-pointer">Privacy Policy</li>
+                </ul>
+            </div>
+
+            <div class="">
+                <h3 class="font-bold uppercase">subscribe to our newsletter</h3>
+                <p class="mt-2 text-sm text-gray-400">The latest news, article, and resources, send to your inbox weekly
+                </p>
+                <div class="join mt-2">
+                    <div>
+                        <label class="input input-sm">
+                            <input type="email" class="text-black" placeholder="enter your email" required />
+                        </label>
                     </div>
+                    <button class="btn btn-sm btn-primary join-item">subscribe</button>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
     <script src="./javascript/script.js"></script>
 </body>
